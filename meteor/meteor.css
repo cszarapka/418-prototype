@@ -33,3 +33,7 @@ img.resize {
     left: 0px;
     z-index: 20;
 }
+
+.spaces-list{
+    padding-top: 100px;
+}
