@@ -1,0 +1,55 @@
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="meteor.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <title>Nook | Announcements</title>
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logoReplacement" href="home_page.html">the company Nook</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="home_page.html">Home</a>
+                            </li>
+                            <li><a href="announcements_page.html">Announcements</a>
+                            </li>
+                            <li><a href="spaces_page.html">Spaces</a>
+                            </li>
+                            <li><a href="directory_page.html">Directory</a>
+                            </li>
+                            <li>
+                                <form class="navbar-form navbar-right">
+                                    <input class="form-control" placeholder="Search Directory..." type="text">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="#" id="nav-profile-link">Cameron Szarapka</a>
+                            </li>
+                            <li><img class="resize" src="public/nook_profile.png" alt="Profile Picture" id="nav-profile-pic">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+</body>
+
+<template name="hello">
+    <button>Click Me</button>
+    <p>You've pressed the button {{counter}} times.</p>
+</template>
