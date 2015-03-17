@@ -9,6 +9,54 @@
    	vertical-align: middle;
 }
 
+.select-title {
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.select-row {
+    margin-bottom: 20px;
+}
+
+.floatMeToo {
+   float: left;
+    margin: auto;
+}
+
+div.select-styles {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    background: white url(public/formelements-select.png) no-repeat bottom right;
+    /* this is the new drop button, in image form */
+    width:12em; border-radius:2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;
+    float: left;
+}
+
+
+div.select-styles select {
+    width:115% /* this percentage effectively extends the drop down button out of view */;
+    background-color:transparent /* this hides the select's background making any styling visible from the div */;
+    background-image:none;
+    -webkit-appearance: none /* this is required for Webkit browsers */;
+    border:none;
+    box-shadow:none;
+    padding:0.3em 0.5em; /* padding should be added to the select, not the div */
+    margin: auto;
+}
+
+.directory-list {
+    margin-top: 80px;
+}
+
+.title-divider {
+    margin: 20px 0px;
+}
+
 img.resize {
     width: 40px;
     height: 40px;
