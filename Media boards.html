@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+
+<script>
+  
+function displayPage2(){
+  //document.getElementById("myHeader").innerHTML = "Have a nice day!";
+  console.log("got into displayPage2 function");
+  document.getElementById("row1-1").src = "bon.jpg" ;
+  document.getElementById("row1-2").src = "bon.jpg" ;
+  document.getElementById("row1-3").src = "bon.jpg" ;
+}
+
+</script>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,7 +23,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      body {background-color:lightgray}
+      body {background-color:white}
       h1   {color:yellow}
 
     </style>
@@ -36,7 +49,7 @@
        
         <div class = "collapse navbar-collapse" id = "collapse-pills">
          <ul class = "nav navbar-right nav-pills " style="margin-top:5px; margin-right: 10px">
-          <li><a href = "#">Doge <img src="doge.png" class = "img-circle" alt="User" style="width:50px;height:50px"></a></li>
+          <li><a href = "#">Chris Xiao <img src="headshot.png" class = "img-circle" alt="User" style="width:50px;height:50px"></a></li>
          </ul>
         </div>
       </div>
@@ -57,33 +70,45 @@
       <li><a href="#">Union Event</a></li>
     </ul>
   </div>
+<!--ADD and REMOVE media buttons-->
+
+  <div class="btn-group" role="group" align ="right">
+    <button type="button" class="btn btn-default" aria-label="Add Media" align="right">
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Media
+    </button>
+
+    <button type="button" class="btn btn-default" aria-label="Remove Media" align="right">
+      <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Media
+    </button>
+  </div>
+
   </div>
   <div class = "container">
   <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-info active">1</button>
-  <button type="button" class="btn btn-info">2</button>
-  <button type="button" class="btn btn-info">3</button>
-  <button type="button" class="btn btn-info">4</button>
+  <button type="button" onclick="displayPage1()" class="btn btn-info active">1</button>
+  <button type="button" onclick="displayPage2()" class="btn btn-info">2</button>
+  <button type="button" onclick="displayPage3()" class="btn btn-info">3</button>
+  <button type="button" onclick="displayPage4()" class="btn btn-info">4</button>
 </div>
 </div>
 <div class = "container" style = "board: 5px solid black">
   <div class = "table">
-<div class="row">
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+<div class="row" id="row1">
+  <div class="col-sm-4" id="row1-1"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+  <div class="col-sm-4" id="row1-2"><img src="bon.jpg" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+  <div class="col-sm-4" id="row1-3"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
 </div>
 
-<div class="row">
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+<div class="row" id="row2">
+  <div class="col-sm-4" id="row2-1"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+  <div class="col-sm-4" id="row2-2"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+  <div class="col-sm-4" id="row2-3"><img src="cat.jpg" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
 </div>
 
-<div class="row">
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
-  <div class="col-sm-4"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+<div class="row" id="row3">
+  <div class="col-sm-4" id="row3-1"><img src="cam.jpg" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+  <div class="col-sm-4" id="row3-2"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
+  <div class="col-sm-4" id="row3-3"><img src="morg.png" class = "img-rounded" style="width:200px;height:200px" vspace = "40"></div>
 </div>
 </div>
 </div>
