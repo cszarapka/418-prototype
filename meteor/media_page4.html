@@ -1,121 +1,135 @@
 <!DOCTYPE html>
 
 <script>
-  
-function displayPage2(){
-  //document.getElementById("myHeader").innerHTML = "Have a nice day!";
-  console.log("got into displayPage2 function");
-  document.getElementById("row1-1").src = "bon.jpg" ;
-  document.getElementById("row1-2").src = "bon.jpg" ;
-  document.getElementById("row1-3").src = "bon.jpg" ;
-}
-
+    function displayPage2() {
+        //document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        console.log("got into displayPage2 function");
+        document.getElementById("row1-1").src = "bon.jpg";
+        document.getElementById("row1-2").src = "bon.jpg";
+        document.getElementById("row1-3").src = "bon.jpg";
+    }
 </script>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="meteor.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <title>Nook | Media</title>
-    </head>
-  
-    <body>
-        <div class="navbar-wrapper">
-            <div class="container">
-                <nav class="navbar navbar-inverse">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a class="navbar-brand logoReplacement" href="#">the company Nook</a>
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a href="home_page.html">Home</a></li>
-                                <li><a href="#about">Announcements</a></li>
-                                <li><a href="spaces_page.html">Spaces</a></li>
-                                <li><a href="#contact">Directory</a></li>
-                                <li>
-                                    <form class="navbar-form navbar-right">
-                                        <input class="form-control" placeholder="Search Directory..." type="text">
-                                    </form>
-                                </li>
-                            </ul>
-                            <ul class="nav navbar-nav pull-right">
-                                <li><a href="#" id="nav-profile-link">Cameron Szarapka</a>
-                                </li>
-                                <li><img class="resize" src="public/nook_profile.png" alt="Profile Picture" id="nav-profile-pic">
-                                </li>
-                            </ul>
-                        </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="meteor.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>Nook | Media</title>
+</head>
+
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logoReplacement" href="#">the company Nook</a>
                     </div>
-                </nav>
-            </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home_page.html">Home</a>
+                            </li>
+                            <li><a href="#about">Announcements</a>
+                            </li>
+                            <li><a href="spaces_page.html">Spaces</a>
+                            </li>
+                            <li><a href="#contact">Directory</a>
+                            </li>
+                            <li>
+                                <form class="navbar-form navbar-right">
+                                    <input class="form-control" placeholder="Search Directory..." type="text">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="#" id="nav-profile-link">Cameron Szarapka</a>
+                            </li>
+                            <li><img class="resize" src="public/nook_profile.png" alt="Profile Picture" id="nav-profile-pic">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="container spaces-list">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="btn-group" role="group" align ="right">
-                        <a href="new_media_page.html" class=normal-text"><button type="button" class="btn btn-default" aria-label="Add Media" align="right">
+    </div>
+    <div class="container spaces-list">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="btn-group" role="group" align="right">
+                    <a href="new_media_page.html" class=normal-text"><button type="button" class="btn btn-default" aria-label="Add Media" align="right">
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Media
-                        </button></a>
-                    </div>
-                    <div class="btn-group" role="group" aria-label="...">
-                        
-                        <a href="media_page.html">
-                            <button type="button" class="btn btn-info active">1</button>
-                        </a>
-                        <a href="media_page2.html">
-                            <button type="button" class="btn btn-info">2</button>  
-                        </a>
-                        <a href="media_page3.html">
-                            <button type="button" class="btn btn-info">3</button>
-                        </a>
-                        <a href="media_page4.html">
+                    </button></a>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+
+                    <a href="media_page.html">
+                        <button type="button" class="btn btn-info active">1</button>
+                    </a>
+                    <a href="media_page2.html">
+                        <button type="button" class="btn btn-info">2</button>
+                    </a>
+                    <a href="media_page3.html">
+                        <button type="button" class="btn btn-info">3</button>
+                    </a>
+                    <a href="media_page4.html">
                         <button type="button" class="btn btn-info">4</button>
-                        </a>
-                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="row" style="board: 5px solid black">
-                <div class="col-md-12">
-                    <div class = "table">
-                        <div class="row" id="row1">
-                            <div class="col-sm-2" id="row1-1"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Morgan</font></p>
-                             </div>
-                            <div class="col-sm-2" id="row1-2"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Monkey</font></p>
-                            </div>
-                            <div class="col-sm-2" id="row2-3"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Cat</font></p>
-                            </div>
-                            <div class="col-sm-2" id="row2-2"><img src="public/bon.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Another Morgan</font></p>
-                            </div>
-                            <div class="col-sm-2" id="row2-3"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Kitten</font></p>
-                            </div>
+        </div>
+        <div class="row" style="board: 5px solid black">
+            <div class="col-md-12">
+                <div class="table">
+                    <div class="row" id="row1">
+                        <div class="col-sm-2" id="row1-1"><img src="public/cat.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Morgan</font>
+                            </p>
                         </div>
-                        <div class="row" id="row2">
-                            <div class="col-sm-2" id="row2-1"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Voice of God?</font></p>
-                            </div>
-                            <div class="col-sm-2" id="row2-2"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Professional</font></p>
-                            </div>
-                            <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-                                <p align="center"><font size="3">Catsss</font></p>
-                            </div>
-                        
+                        <div class="col-sm-2" id="row1-2"><img src="public/cat.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Monkey</font>
+                            </p>
                         </div>
+                        <div class="col-sm-2" id="row2-3"><img src="public/cam.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Cat</font>
+                            </p>
+                        </div>
+                        <div class="col-sm-2" id="row2-2"><img src="public/bon.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Another Morgan</font>
+                            </p>
+                        </div>
+                        <div class="col-sm-2" id="row2-3"><img src="public/cam.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Kitten</font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" id="row2">
+                        <div class="col-sm-2" id="row2-1"><img src="public/morg.png" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Voice of God?</font>
+                            </p>
+                        </div>
+                        <div class="col-sm-2" id="row2-2"><img src="public/cam.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            <p align="center"><font size="3">Professional</font>
+                            </p>
+                        </div>
+                        <div class="col-sm-2" id="row2-3">
+                            <a href="media_page_single.html"><img src="public/pic.jpg" class="img-rounded" style="width:150px;height:150px" vspace="10">
+                            </a>
+                            <p align="center"><font size="3">Click me, then delete please</font>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
