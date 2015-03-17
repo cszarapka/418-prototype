@@ -37,3 +37,8 @@ img.resize {
 .spaces-list{
     padding-top: 100px;
 }
+
+a.normal-text, a.normal-text:active, a.normal-text:visited, a.normal-text:hover {
+    color: black;
+    text-decoration: none;
+}
