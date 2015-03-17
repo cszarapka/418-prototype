@@ -13,122 +13,109 @@ function displayPage2(){
 </script>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NOOK</title>
-
-<!-- Jquery -->
-<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <!-- Bootstrap -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-   
-
-
-
-    <style>
-      body {background-color:white}
-      h1   {color:yellow}
-
-    </style>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="meteor.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <title>Nook | Media</title>
+    </head>
   
-  <body>
-
-
-    <nav class = "navbar navbar-inverse navbar-static-top">
-      <div class = "container-fluid">
-        <div class = "navbar-header">
-          <h1>The Office NOOK</h1>
-       
-          <button class = "navbar-toggle visible-xs" data-toggle = "collapse" data-target = "#collapse-pills">
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-          </button>
-        </div> 
-       
-        <div class = "collapse navbar-collapse" id = "collapse-pills">
-         <ul class = "nav navbar-right nav-pills " style="margin-top:5px; margin-right: 10px">
-          <li><a href = "#">Chris Xiao <img src="public/headshot.png" class = "img-circle" alt="User" style="width:50px;height:50px"></a></li>
-         </ul>
+    <body>
+        <div class="navbar-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-inverse">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand logoReplacement" href="#">the company Nook</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="home_page.html">Home</a></li>
+                                <li><a href="#about">Announcements</a></li>
+                                <li><a href="spaces_page.html">Spaces</a></li>
+                                <li><a href="#contact">Directory</a></li>
+                                <li>
+                                    <form class="navbar-form navbar-right">
+                                        <input class="form-control" placeholder="Search Directory..." type="text">
+                                    </form>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a href="#" id="nav-profile-link">Cameron Szarapka</a>
+                                </li>
+                                <li><img class="resize" src="public/nook_profile.png" alt="Profile Picture" id="nav-profile-pic">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-      </div>
-    </nav>
-  <button type="button" class="btn btn-warning btn-lg" style="margin-left: 10px">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Home
-  </button>
+        <div class="container spaces-list">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group" role="group" align ="right">
+                        <button type="button" class="btn btn-default" aria-label="Add Media" align="right">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Media
+                        </button>
 
-  <div class="btn-group" role="group">
-    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-      Events
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu">
-      <li><a href="#">Halloween Party</a></li>
-      <li><a href="#">Christmas Party</a></li>
-      <li><a href="#">Safety Meeting</a></li>
-      <li><a href="#">Union Event</a></li>
-    </ul>
-  </div>
-<!--ADD and REMOVE media buttons-->
-
-  <div class="btn-group" role="group" align ="right">
-    <button type="button" class="btn btn-default" aria-label="Add Media" align="right">
-      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add Media
-    </button>
-
-    <button type="button" class="btn btn-default" aria-label="Remove Media" align="right">
-      <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Media
-    </button>
-  </div>
-
-  </div>
-  <div class = "container">
-  <div class="btn-group" role="group" aria-label="...">
-  <button type="button" onclick="displayPage1()" class="btn btn-info active">1</button>
-  <button type="button" onclick="displayPage2()" class="btn btn-info">2</button>
-  <button type="button" onclick="displayPage3()" class="btn btn-info">3</button>
-  <button type="button" onclick="displayPage4()" class="btn btn-info">4</button>
-</div>
-</div>
-<div class = "container" style = "board: 5px solid black">
-  <div class = "table">
-<div class="row" id="row1">
-  <div class="col-sm-2" id="row1-1"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-   <p align="center"><font size="3">Morgan</font></p> </div>
-  <div class="col-sm-2" id="row1-2"><img src="public/bon.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">Monkey</font></p></div>
-  <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">Cat</font></p></div>
-    <div class="col-sm-2" id="row2-2"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">Another Morgan</font></p></div>
-    <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-  <p align="center"><font size="3">Kitten</font></p></div>
-</div>
-
-<div class="row" id="row2">
-  <div class="col-sm-2" id="row2-1"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
-   <p align="center"><font size="3">Voice of God?</font></p> </div>
-  <div class="col-sm-2" id="row2-2"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">Professional</font></p></div>
-  <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">Catsss</font></p></div>
-    <div class="col-sm-2" id="row2-4"><img src="public/bon.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">King Kong</font></p></div>
-    <div class="col-sm-2" id="row2-5"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
- <p align="center"><font size="3">Copycat</font></p></div>
-
-</div>
-</div>
-</div>
-  </body>
+                        <button type="button" class="btn btn-default" aria-label="Remove Media" align="right">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Remove Media
+                        </button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" onclick="displayPage1()" class="btn btn-info active">1</button>
+                        <button type="button" onclick="displayPage2()" class="btn btn-info">2</button>
+                        <button type="button" onclick="displayPage3()" class="btn btn-info">3</button>
+                        <button type="button" onclick="displayPage4()" class="btn btn-info">4</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="board: 5px solid black">
+                <div class="col-md-12">
+                    <div class = "table">
+                        <div class="row" id="row1">
+                            <div class="col-sm-2" id="row1-1"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Morgan</font></p>
+                             </div>
+                            <div class="col-sm-2" id="row1-2"><img src="public/bon.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Monkey</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Cat</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-2"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Another Morgan</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Kitten</font></p>
+                            </div>
+                        </div>
+                        <div class="row" id="row2">
+                            <div class="col-sm-2" id="row2-1"><img src="public/morg.png" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Voice of God?</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-2"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Professional</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-3"><img src="public/cat.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Catsss</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-4"><img src="public/bon.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">King Kong</font></p>
+                            </div>
+                            <div class="col-sm-2" id="row2-5"><img src="public/cam.jpg" class = "img-rounded" style="width:150px;height:150px" vspace = "10">
+                                <p align="center"><font size="3">Copycat</font></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
