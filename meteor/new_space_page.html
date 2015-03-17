@@ -1,0 +1,58 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="meteor.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>Nook | Spaces</title>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand logoReplacement" href="home_page.html">the company Nook</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="home_page.html">Home</a></li>
+                            <li><a href="announcements_page.html">Announcements</a></li>
+                            <li class="active"><a href="spaces_page.html">Spaces</a></li>
+                            <li><a href="directory_page.html">Directory</a></li>
+                            <li>
+                                <form class="navbar-form navbar-right">
+                                    <input class="form-control" placeholder="Search Directory..." type="text">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="#" id="nav-profile-link">Cameron Szarapka</a>
+                            </li>
+                            <li><img class="resize" src="public/nook_profile.png" alt="Profile Picture" id="nav-profile-pic">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container spaces-list">
+        <form action="media_page_empty.html">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" value="Test">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" value="This is a test space.">
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type">
+                    <option value="media">Media Board</option>
+                    <option value="chat">Chat Room</option>
+                <select>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</body>
