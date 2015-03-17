@@ -10,6 +10,12 @@
     vertical-align: middle;
 }
 
+.single-image {
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
 div.panel {
     margin-left: 10px;
     margin-right: 10px;
