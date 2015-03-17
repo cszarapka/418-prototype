@@ -75,3 +75,9 @@ a.normal-text, a.normal-text:active, a.normal-text:visited, a.normal-text:hover 
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.new-space {
+    margin-left: 130px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
