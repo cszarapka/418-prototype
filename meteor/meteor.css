@@ -2,8 +2,8 @@
 .logoReplacement {
 	text-indent: -9999px;
 	width: 172px;
-   	height: 41px;
-   	background: url(public/logo_white.png) no-repeat; 
+   	height: 41px !important;
+   	background: url(logo_white.png) no-repeat; 
    	margin-top: 8px;
    	display: inline-block;
    	vertical-align: middle;
@@ -17,12 +17,17 @@ img.resize {
     margin-right: 5px;
 }
 
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+}
+
 .navbar {
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 .container > .navbar-header {
-    margin-left: 10px;
+    margin-left: 10px !important;
 }
 
 .navbar-wrapper {
@@ -32,4 +37,26 @@ img.resize {
     right: 0px;
     left: 0px;
     z-index: 20;
+}
+
+div.item {
+    height: 500px;
+}
+
+.featurette-divider {
+    margin: 80px 0px !important;
+}
+
+.col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marginUp {
+    margin-top: -60px;
+    margin-bottom: 10px;
+}
+
+.marginUp > h2 {
+    text-align: center;
 }
